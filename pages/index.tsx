@@ -1,66 +1,39 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import RotateSpark from "../src/components/RotateSpark";
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+    <div className="container flex flex-col flex-auto min-w-full items-center justify-center text-center">
+      <div className="font-title tracking-wider uppercase text-3xl">
+        Hi! I'm Hyewon Kwak
+      </div>
+      <div className="relative h-80 w-80 bg-contain bg-no-repeat bg-[url('../public/yumyumnyang.png')]">
+        <div className="absolute top-40 right-0 font-desc text-left whitespace-pre break-normal text-xs">{`based in
+busan, south korea`}</div>
+        <RotateSpark
+          className="absolute top-14 left-0 w-14 h-14 flex"
+          animationOption="5s"
+        />
+        <RotateSpark
+          className="absolute top-0 left-5 w-20 h-20 flex"
+          animationOption="3s"
+        />
+        <RotateSpark
+          className="absolute top-40 right-0 w-12 h-12 flex"
+          animationOption="5s"
+        />
+      </div>
+      <div className="font-title tracking-wider uppercase text-3xl text-blue">
+        frontend developer!
+      </div>
+      <div className="font-subTitle whitespace-pre break-normal text-xs ">{`A creative FRONT-end developer 
+with a passion For
+web Technologies,
+Design, and Problem solving.
+_`}</div>
     </div>
   );
 }
