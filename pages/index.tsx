@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 busan, south korea`}</div>
         <RotateSpark
           className="absolute top-14 left-0 w-14 h-14 flex"
-          animationOption="5s"
+          animationOption="3s"
         />
         <RotateSpark
           className="absolute top-0 left-5 w-20 h-20 flex"
@@ -25,6 +25,7 @@ busan, south korea`}</div>
           className="absolute top-40 right-0 w-12 h-12 flex"
           animationOption="5s"
         />
+        
       </div>
       <div className="font-title tracking-wider uppercase text-3xl text-blue">
         frontend developer!

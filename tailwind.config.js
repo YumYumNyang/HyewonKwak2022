@@ -18,10 +18,13 @@ module.exports = {
         yumyumnyang: "url('../public/yumyumnyang.png')",
       },
       keyframes: {
-        rotating: {
+        rotate: {
           "0%": { transform: "rotate(0deg)" },
-          "100%": { transform: "rotate(365deg)" },
+          "80%": { transform: "rotate(365deg)" },
         },
+      },
+      animation: {
+        rotate: "rotate 2s ease-in-out infinite",
       },
     },
   },

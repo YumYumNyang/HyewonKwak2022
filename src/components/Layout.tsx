@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import Menu from "./Menu";
 
 type LayoutProps = {
   children: ReactElement;
