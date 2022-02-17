@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
-import Menu from "./Menu";
+
 
 type LayoutProps = {
   children: ReactElement;
@@ -9,7 +9,7 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="container flex flex-col min-h-screen min-w-full">
+    <div className="container flex flex-col min-h-screen min-w-full dark:text-white dark:bg-black">
       <Header />
       {children}
       <Footer />

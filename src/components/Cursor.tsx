@@ -22,6 +22,6 @@ const Cursor = forwardRef<CursorHandle, CursorProps>((props, ref) => {
     []
   );
 
-  return <div className=" z-50 bg-blue w-8 h-8 rounded-full " ref={el}></div>;
+  return <div className="bg-blue w-8 h-8 rounded-full " ref={el}></div>;
 });
 export default Cursor;

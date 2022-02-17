@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   
   return (
     <>
-      <Cursor ref={cursorRef} />
+      {/* <Cursor ref={cursorRef} /> */}
       <Layout>
         <Component {...pageProps} />
       </Layout>

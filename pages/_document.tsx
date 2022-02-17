@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="shortcut icon" href="/favicon.ico"   />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
@@ -12,9 +13,9 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Modak&family=Rubik+Mono+One&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Modak&family=Rubik+Mono+One&family=Rubik:wght@500&display=swap"
             rel="stylesheet"
-          ></link>
+          />
         </Head>
         <body>
           <Main />

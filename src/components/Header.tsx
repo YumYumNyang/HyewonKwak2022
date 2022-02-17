@@ -1,18 +1,25 @@
-import Router from "next/router";
+import Router, { useRouter } from "next/router";
 import React, { useState } from "react";
-import Menu from "./Menu";
 
 const Header = () => {
-  const [show, setShow] = useState(false);
+  const router = useRouter();
   return (
     <>
-      <div className="mx-3 px-3 flex items-center justify-between h-8 font-desc border-b-2 text-xs border-black">
-        <div  onClick={()=>Router.push('/')}>hyewon kwak</div>
-        <div  onClick={() => setShow(true)}>
-          menu
-        </div>
+      <div className="mx-3 px-3 flex items-center justify-between h-8 font-desc border-b-2 text-xs  border-black dark:border-white">
+        <div onClick={() => router.push("/")}>hyewon kwak</div>
+        {router.pathname === "/menu" ? (
+          <div className="cursor-pointer" onClick={() => router.back()}>
+            close
+          </div>
+        ) : (
+          <div className="cursor-pointer" onClick={() => router.push("/menu")}>
+            {router.pathname === "/"
+              ? "home"
+              : router.pathname.replace("/", "")}
+            /menu
+          </div>
+        )}
       </div>
-      <Menu show={show} onClose={() => setShow(false)} />
     </>
   );
 };

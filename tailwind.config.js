@@ -5,13 +5,18 @@ module.exports = {
       title: ["Modak"],
       subTitle: ["'Rubik Mono One'"],
       desc: ["'Bebas Neue'"],
-      etc: ["Courier"],
+      code: ["Courier"],
+      etc: ["Rubik"],
     },
     colors: {
       transparent: "transparent",
       black: "#000",
       white: "#fff",
       blue: "#1B1EFF",
+      gray: "#292929",
+      green: "#52C22B",
+      red: "#FF5A52",
+      yellow: "#E6C029",
     },
     extend: {
       backgroundImage: {
