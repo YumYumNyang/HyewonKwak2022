@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import Layout from "../src/components/Layout";
 import { useEffect, useRef } from "react";
 import Cursor, { CursorHandle } from "../src/components/Cursor";
-
+import { ThemeProvider } from "next-themes";
 type moveProps = {
   clientX: number;
   clientY: number;
@@ -11,6 +11,7 @@ type moveProps = {
 
 function MyApp({ Component, pageProps }: AppProps) {
   const cursorRef = useRef<CursorHandle>(null);
+  
 
   useEffect(() => {
     if (cursorRef.current) {
@@ -24,12 +25,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
   
   return (
-    <>
+    <ThemeProvider attribute="class">
       {/* <Cursor ref={cursorRef} /> */}
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </>
+    </ThemeProvider>
   );
 }
 
