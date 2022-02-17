@@ -24,13 +24,13 @@ const About: NextPage = () => {
           <br />
           _yumyumnyang
         </div>
-        <table className="w-8/12 table-fixed text-left border-white border-4  text-white ">
-          <thead className="font-subTitle text-lg border-text-white ">
+        <table className="w-11/12 table-fixed text-left border-white border-4 sm:border-2  text-white ">
+          <thead className="font-subTitle text-lg sm:text-tiny border-text-white ">
             <th className="p-2 border-white border-2 ">info.</th>
             <th className="p-2 border-white border-2 ">skills.</th>
             <th className="p-2 border-white border-2 ">education.</th>
           </thead>
-          <tbody className="font-desc border-white border-2 ">
+          <tbody className="font-desc border-white border-2 sm:border-1 sm:text-xs ">
             <td className="p-2 border-white border-2 ">{`🏠 
 Busan, South Korea
 

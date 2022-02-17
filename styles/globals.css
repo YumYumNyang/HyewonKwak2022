@@ -38,61 +38,35 @@ a {
 }
 .border-text-black{
   color: #FFF;
-  -webkit-text-stroke: 2px #000;
+  -webkit-text-stroke: 3px #000;
   
   /* text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;
   -moz-text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;
   -webkit-text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF; */
 }
-.border-text-white-white{
-  color: #000;
-  -webkit-text-stroke: 2px #fff;
-  /* text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;
-  -moz-text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;
-  -webkit-text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF; */
+@layer components{
+  .border-text-white-white{
+    color: #000;
+    -webkit-text-stroke: 2px #fff;
+    /* text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;
+    -moz-text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;
+    -webkit-text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF; */
+  }
+  .back{
+    z-index: -1;
+    height: 0.83em;
+    /* max-height: 0; */
+    transition:height .6s linear,transform .6s cubic-bezier(.31,.15,.61,.38);
+    position: absolute;
+    bottom: -0.2em;
+    z-index: 0;
+    /* transform: translateY(0.9375rem); */
+  }
+
 }
 
-.wave,
-.wave::before,
-.wave::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 250vw;
-  height: 250vw;
-  margin-left: -125vw;
-  transform-origin: 50% 50%;
-  background-color: transparent;
-  border-radius: 38% 42%;
-  box-shadow: inset 0 0 10vw rgba(255,0,255,0.8);
-  animation: spin 16s infinite linear;
-  mix-blend-mode: multiply;
-}
 
-.wave::before {
-  width: 105%;
-  height: 95%;
-  margin-top: -125vw;
-  transform-origin: 49% 51%;
-  border-radius: 40% 38%;
-  box-shadow: inset 0 0 10vw rgba(255,255,0,0.8);
-  animation: spin 13s infinite linear;
-}
 
-.wave::after {
-  width: 102%;
-  height: 98%;
-  margin-top: -125vw;
-  transform-origin: 51% 49%;
-  border-radius: 48% 42%;
-  box-shadow: inset 0 0 10vw rgba(0,255,255,0.8);
-  animation: spin 10s infinite linear;
-}
-
-@keyframes spin {
-  100% { transform: rotate(360deg); }
-}
 
 
 

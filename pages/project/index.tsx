@@ -2,6 +2,11 @@ import { NextPage } from "next";
 import LeftProject from "../../src/components/LeftProject";
 import RightProject from "../../src/components/RightProject";
 import Title from "../../src/components/Title";
+import gotgam from "../../public/gotgam.png";
+import lolmbti from "../../public/lolmbti.png";
+import eggcation from "../../public/Eggcation.webp";
+import pixelskin from "../../public/pixelskin.png";
+
 
 const Project: NextPage = () => {
   return (
@@ -9,7 +14,7 @@ const Project: NextPage = () => {
       <Title title={"See My Works!"} />
       <div className="w-10/12 border-b"></div>
       <RightProject
-        src={`/gotgam.png`}
+        src={gotgam}
         title={`GOT,GAM`}
         subTitle={`TraveL record platfrom`}
         description={`wanted hackathon best  participant 50 
@@ -19,7 +24,7 @@ const Project: NextPage = () => {
       />
       <div className="w-10/12 border-b"></div>
       <LeftProject
-        src={`/lolmbti.png`}
+        src={lolmbti}
         title={`Lol-mbti
 test`}
         subTitle={`mbti test service`}
@@ -27,8 +32,8 @@ test`}
       />
       <div className="w-10/12 border-b"></div>
       <RightProject
-        src={`/Eggcation.webp`}
-        title={`Eggcation`}
+        src={eggcation}
+        title={`Egg cation`}
         subTitle={`metaverse for education`}
         description={`pnu  creative convergence hackathon 2nd prize
 
@@ -36,10 +41,11 @@ test`}
       />
       <div className="w-10/12 border-b"></div>
       <LeftProject
-        src={`/pixelskin.png`}
+        src={pixelskin}
         title={`pixel
 skin`}
-        subTitle={`pixel theme for tistory blog`}
+        subTitle={`pixel theme
+for tistory blog`}
         description={`2022.08-`}
       />
     </div>

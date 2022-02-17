@@ -1,7 +1,28 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
+    screens: {
+      "lg-pad": {max: "1024px",'raw': "(min-height: 1366px)" },
+      lg: { max: "1023px" },
+      md: { max: "767px" },
+      sm: { max: "576px" },
+    },
+    fontSize: {
+      tiny: ".50rem",
+      "2xs": ".60rem",
+      xs: ".75rem",
+      sm: ".875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
+      "7xl": "5rem",
+    },
     fontFamily: {
       title: ["Modak"],
       subTitle: ["'Rubik Mono One'"],
@@ -23,10 +44,10 @@ module.exports = {
       backgroundImage: {
         yumyumnyang: "url('../public/yumyumnyang.png')",
       },
+
       keyframes: {
         rotate: {
-          "0%": { transform: "rotate(0deg)" },
-          "80%": { transform: "rotate(365deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
       animation: {

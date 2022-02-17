@@ -2,15 +2,15 @@ import Image from "next/image";
 import React from "react";
 
 interface Props {
-  src: string;
+  src: StaticImageData;
   title: string;
   subTitle: string;
   description: string;
 }
 const LeftProject = ({ src, title, subTitle, description }: Props) => {
   return (
-    <div className="container flex justify-between p-20">
-      <div className="relative flex w-2/5 h-52">
+    <div className="container flex-auto flex justify-between p-20 sm:flex-col md:flex-col lg:flex-col lg-pad:flex-col sm:p-3 md:p-3 lg:p-5 lg-pad:p-5">
+      <div className="relative flex w-3/6 h-60 sm:w-full sm:h-40 md:w-full md:h-50 lg:w-full lg:h-60 lg-pad:w-full lg-pad:h-60">
         <Image
           src={src}
           objectFit="cover"
@@ -19,11 +19,15 @@ const LeftProject = ({ src, title, subTitle, description }: Props) => {
         />
       </div>
       <div className="flex flex-col justify-between text-right">
-        <div className="font-subTitle text-6xl border-text-black dark:border-text-whtie-white ">
+        <div className="font-subTitle text-6xl border-text-black dark:border-text-whtie-white sm:text-4xl md:text-4xl  lg:text-4xl lg-pad:text-4xl dark:border-text-white-white">
           {title}
         </div>
-        <div className="font-subTitle ">{subTitle}</div>
-        <div className="font-desc">{description}</div>
+        <div className="font-subTitle text-lg sm:text-xs md:text-xs lg:text-sm lg-pad:text-sm">
+          {subTitle}
+        </div>
+        <div className="font-desc sm:text-2xs md:text-2xs lg:text-xs lg-pad: text-xs">
+          {description}
+        </div>
       </div>
     </div>
   );
