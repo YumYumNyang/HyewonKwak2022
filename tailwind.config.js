@@ -3,8 +3,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      "lg-pad": {'raw': "(min-height: 1366px),(max-width:1024px)" },
-      lg: { max: "1023px" },
+      lg: { max: "1024px" },
       md: { max: "767px" },
       sm: { max: "576px" },
     },

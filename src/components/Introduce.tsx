@@ -11,7 +11,7 @@ const Introduce = () => {
           <div className="w-4 h-4 rounded-full bg-yellow"></div>
           <div className="w-4 h-4 rounded-full bg-green"></div>
         </div>
-        <div className="text-black p-20 sm:p-3 md:p-3 lg:p-5 lg-pad:p-5  font-code text-sm sm:text-2xs md:text-xs lg:text-xs lg-pad:text-xs">{`HI! : ) I’m Hyewon Kwak, a creative front-end developer based in south korea
+        <div className="text-black p-20 sm:p-3 md:p-3 lg:p-5   font-code text-sm sm:text-2xs md:text-xs lg:text-xs">{`HI! : ) I’m Hyewon Kwak, a creative front-end developer based in south korea
 who has passion for web technologies, design, and problem-solving.
 
 Front-end development is attractive 

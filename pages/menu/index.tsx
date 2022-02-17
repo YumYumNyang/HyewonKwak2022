@@ -15,7 +15,7 @@ const routes = [
 const Menu: NextPage = () => {
   const router = useRouter();
   return (
-    <div className="conatiner flex-auto flex sm:flex-col items-center justify-center space-x-8 sm:space-x-0 md:space-x-2 lg:space-x-2 lg-pad:space-x-2">
+    <div className="conatiner flex-auto flex sm:flex-col items-center justify-center space-x-8 sm:space-x-0 md:space-x-2 lg:space-x-2 ">
       <div className="flex flex-col space-y-3  justify-center">
         {routes.map((route, index) => {
           return (
@@ -27,7 +27,7 @@ const Menu: NextPage = () => {
               className="flex "
             >
               <div className="font-desc break-normal">0{index + 1}</div>
-              <div className="group font-subTitle relative text-6xl sm:text-2xl md:text-3xl lg:text-4xl lg-pad:text-4xl ml-5 sm:ml-2 md:ml-2 lg:ml-0 lg-pad:ml-0 ">
+              <div className="group font-subTitle relative text-6xl sm:text-2xl md:text-3xl lg:text-4xl ml-5 sm:ml-2 md:ml-2 lg:ml-0 ">
                 <div className="absolute h-0 bg-blue w-full group-hover:back"></div>
                 <div>{route.key}</div>
               </div>
