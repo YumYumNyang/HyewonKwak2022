@@ -6,6 +6,7 @@ type CursorProps = {};
 export type CursorHandle = {
   moveTo: (x: number, y: number) => void;
 };
+//eslint-disable-next-line react/display-name
 const Cursor = forwardRef<CursorHandle, CursorProps>((props, ref) => {
   const el = useRef(null);
 
@@ -24,4 +25,5 @@ const Cursor = forwardRef<CursorHandle, CursorProps>((props, ref) => {
 
   return <div className="bg-blue w-8 h-8 rounded-full " ref={el}></div>;
 });
+Cursor.displayName = "Cursor";
 export default Cursor;

@@ -12,7 +12,13 @@ const Contact = () => {
   return (
     <div className="flex flex-col items-center space-y-2 sm:space-y-1 mb-4 sm:mb-0">
       <div className="w-40 h-40 sm:w-32 sm:h-32 md:w-24 md:h-24 lg:w-24 lg:h-24 lg-pad:w-24 lg-pad:h-24 relative">
-        <Image id="logo" src={logo} objectFit="contain" layout="fill"></Image>
+        <Image
+          id="logo"
+          alt="logo"
+          src={logo}
+          objectFit="contain"
+          layout="fill"
+        ></Image>
       </div>
       <div className="font-subTitle text-center text-2xl md:text-base lg:text-base lg-pad:text-base  text-blue font-bold">
         contact

@@ -17,6 +17,7 @@ const About: NextPage = () => {
             objectFit="contain"
             className="rounded-full"
             layout="fill"
+            alt="hyewon"
           />
         </div>
         <div className="font-subTitle  text-white m-5">

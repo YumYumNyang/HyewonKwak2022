@@ -24,6 +24,7 @@ const RightProject = ({ src, title, subTitle, description }: Props) => {
       <div className="relative flex w-3/6 h-60 sm:w-full sm:h-36 md:w-full md:h-50  lg:w-full lg:h-60  lg-pad:w-full lg-pad:h-60 ">
         <Image
           src={src}
+          alt={title}
           objectFit="cover"
           layout="fill"
           objectPosition="center 60%"

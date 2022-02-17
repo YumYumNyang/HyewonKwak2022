@@ -12,6 +12,7 @@ const LeftProject = ({ src, title, subTitle, description }: Props) => {
     <div className="container flex-auto flex justify-between p-20 sm:flex-col md:flex-col lg:flex-col lg-pad:flex-col sm:p-3 md:p-3 lg:p-5 lg-pad:p-5">
       <div className="relative flex w-3/6 h-60 sm:w-full sm:h-40 md:w-full md:h-50 lg:w-full lg:h-60 lg-pad:w-full lg-pad:h-60">
         <Image
+          alt={title}
           src={src}
           objectFit="cover"
           layout="fill"

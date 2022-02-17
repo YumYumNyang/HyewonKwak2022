@@ -29,6 +29,7 @@ the joy that I can feel when I persistently think about difficult problems and s
       <div className="logo w-80 h-80 relative">
         <Image
           id="logo"
+          alt="logo"
           src={yum}
           objectFit="contain"
           className="rounded-full"

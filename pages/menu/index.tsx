@@ -28,8 +28,8 @@ const Menu: NextPage = () => {
             >
               <div className="font-desc break-normal">0{index + 1}</div>
               <div className="group font-subTitle relative text-6xl sm:text-2xl md:text-3xl lg:text-4xl lg-pad:text-4xl ml-5 sm:ml-2 md:ml-2 lg:ml-0 lg-pad:ml-0 ">
-                <div>{route.key}</div>
                 <div className="absolute h-0 bg-blue w-full group-hover:back"></div>
+                <div>{route.key}</div>
               </div>
             </div>
           );
