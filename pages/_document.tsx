@@ -12,7 +12,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Hyewon Kwak frontend developer</title>
           <meta
             name="description"
             content="Hyewon Kwak Frontend Developer Portfolio Website"
