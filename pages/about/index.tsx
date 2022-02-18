@@ -9,7 +9,7 @@ const About: NextPage = () => {
   return (
     <div className="container min-w-full min-h-screen overflow-scroll flex flex-col items-center">
       <Title title={"Who am I?"} />
-      <div className="container min-w-full bg-blue flex flex-col flex-auto items-center mt-10">
+      <div className="container min-w-full bg-darkblue flex flex-col flex-auto items-center mt-10">
         <div className="logo w-40 h-40 relative ">
           <Image
             id="logo"
@@ -75,6 +75,7 @@ at Pusan National University`}</td>
           </tbody>
         </table>
         <Introduce />
+        
       </div>
     </div>
   );

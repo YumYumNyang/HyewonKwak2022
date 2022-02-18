@@ -3,7 +3,8 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      lg: { max: "1024px" },
+      xl: { max: "1366px" },
+      lg: { max: "1023px" },
       md: { max: "767px" },
       sm: { max: "576px" },
     },
@@ -34,6 +35,7 @@ module.exports = {
       black: "#000",
       white: "#fff",
       blue: "#1B1EFF",
+      darkblue: "#0022D7",
       gray: "#292929",
       green: "#52C22B",
       red: "#FF5A52",

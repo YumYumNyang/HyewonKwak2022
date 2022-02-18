@@ -28,7 +28,7 @@ const Project: NextPage = () => {
         title={`Lol-mbti
 test`}
         subTitle={`mbti test service`}
-        description={`2022.08-`}
+        description={`2022.09`}
       />
       <div className="w-10/12 border-b"></div>
       <RightProject
@@ -37,7 +37,7 @@ test`}
         subTitle={`metaverse for education`}
         description={`pnu  creative convergence hackathon 2nd prize
 
-2021.07-08 `}
+2021.06-08 `}
       />
       <div className="w-10/12 border-b"></div>
       <LeftProject
@@ -46,7 +46,7 @@ test`}
 skin`}
         subTitle={`pixel theme
 for tistory blog`}
-        description={`2022.08-`}
+        description={`2020.09`}
       />
     </div>
   );

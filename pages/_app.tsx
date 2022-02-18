@@ -1,36 +1,28 @@
 import '../styles/globals.css'
+import gsap from "gsap";
 import type { AppProps } from 'next/app'
 import Layout from "../src/components/Layout";
-import { useEffect, useRef } from "react";
-import Cursor, { CursorHandle } from "../src/components/Cursor";
+import { createContext, useEffect, useRef, useState } from "react";
+
 import { ThemeProvider } from "next-themes";
+import { TransitionProvider } from "../src/components/TransitionProvider";
 type moveProps = {
   clientX: number;
   clientY: number;
 };
 
-function MyApp({ Component, pageProps }: AppProps) {
-  const cursorRef = useRef<CursorHandle>(null);
-  
 
-  useEffect(() => {
-    if (cursorRef.current) {
-      cursorRef.current.moveTo(innerWidth / 2, innerHeight / 2);
-      const onMove = ({ clientX, clientY }: moveProps) => {
-        if (cursorRef.current) cursorRef.current.moveTo(clientX, clientY);
-      };
-      window.addEventListener("pointermove", onMove);
-      return () => window.removeEventListener("pointermove", onMove);
-    }
-  }, []);
-  
+
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class">
-      {/* <Cursor ref={cursorRef} /> */}
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ThemeProvider>
+    <TransitionProvider>
+      <ThemeProvider attribute="class">
+        {/* <Cursor ref={cursorRef} /> */}
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
+    </TransitionProvider>
   );
 }
 
