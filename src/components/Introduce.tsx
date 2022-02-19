@@ -73,7 +73,7 @@ the joy that I can feel when I persistently think about difficult problems and s
           href="mailto:khw121699@gmail.com?subject:Let's Talk"
           className="text-center text-white font-title text-7xl sm:text-4xl md:text-5xl lg:text-5xl mb-10 "
         >
-          let's talk!
+          {`let's talk!`}
         </motion.a>
       </div>
     </AnimateSharedLayout>
