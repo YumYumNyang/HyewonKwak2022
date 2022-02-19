@@ -15,7 +15,7 @@ const Project: NextPage = () => {
       <div className="w-10/12 border-b"></div>
       <RightProject
         src={gotgam}
-        title={`GOT,GAM`}
+        title={`GOT, GAM`}
         subTitle={`TraveL record platfrom`}
         description={`wanted hackathon best  participant 50 
 

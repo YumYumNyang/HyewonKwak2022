@@ -24,8 +24,16 @@ a {
   box-sizing: border-box;
 }
 
+.wave{
+  margin-top: -30px;
+  height: 50px;
+}
 .logo{
-  margin-top: -50px;
+  margin-top: -100px;
+}
+
+#logo{
+  border-radius: 100%;
 }
 
 
@@ -44,25 +52,28 @@ a {
     color: #000;
     -webkit-text-stroke: 2px #fff;
   }
-  .back{
-    z-index: -1;
-    height: 0.83em;
-    /* max-height: 0; */
-    transition:height .6s linear,transform .6s cubic-bezier(.31,.15,.61,.38);
-    position: absolute;
-    bottom: -0.2em;
-    z-index: 0;
-    /* transform: translateY(0.9375rem); */
-  }
-  .page-effect{
-    transform: translateY(-100%);
-  }
-
+ 
+  
 }
 
-
-
-
-
-
-
+/* cursor */
+.typed-cursor{
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+}
+@keyframes typedjsBlink{
+  50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+  0% { opacity: 1; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1; }
+}
+.typed-fade-out{
+  opacity: 0;
+  transition: opacity .25s;
+  -webkit-animation: 0;
+  animation: 0;
+}

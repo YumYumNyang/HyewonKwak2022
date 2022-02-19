@@ -12,8 +12,6 @@ type moveProps = {
   clientY: number;
 };
 
-
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <TransitionProvider>

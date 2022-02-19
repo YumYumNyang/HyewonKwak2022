@@ -25,7 +25,7 @@ const experience = [
     title: `NINEHIRE
 FRONTEND
 DEVELOPMENT`,
-    desc: `Front-end intern at Ninehire
+    desc: `Front-end intern at @Ninehire
 development of recruit management solution 
 `,
     period: `2020.09-2021.02`,

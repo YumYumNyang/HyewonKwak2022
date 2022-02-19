@@ -3,7 +3,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      xl: { max: "1366px" },
+      xl: { max: "1590px" },
       lg: { max: "1023px" },
       md: { max: "767px" },
       sm: { max: "576px" },
@@ -44,15 +44,28 @@ module.exports = {
     extend: {
       backgroundImage: {
         yumyumnyang: "url('../public/yumyumnyang.png')",
+        wave: "url('../public/wave.svg')",
       },
-
       keyframes: {
+        wave: {
+          "0%": { marginLeft: "0px"},
+          "100%": {marginLeft: "-1500px"}
+        },
+        swell: {
+          "0%": { marginLeft: "translate3d(0,-25px,0)"},
+          "100%": {marginLeft: "translate3d(0,-25px,0)"},
+          "50%": {transform : " translate3d(0,5px,0) "}
+        },
         rotate: {
           "100%": { transform: "rotate(360deg)" },
         },
+      
       },
       animation: {
         rotate: "rotate 2s ease-in-out infinite",
+        wave: "wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite",
+        swell:
+          "wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite",
       },
     },
   },
