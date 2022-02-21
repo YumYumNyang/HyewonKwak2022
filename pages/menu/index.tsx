@@ -21,12 +21,13 @@ const Menu: NextPage = () => {
       },
     }),
     hidden: { opacity: 0, y: -30 },
+    hover: {},
   };
 
   const underline = {
-    hover: {opacity : 1, width: "100%"},
-    hidden: {opacity : 0, width: 0}
-  }
+    hover: { opacity: 1, width: "100%", transition: { duration: 0.5 } },
+    hidden: { opacity: 0, width: 0, transition: { duration: 1 } },
+  };
 
   return (
     <AnimateSharedLayout>
@@ -35,7 +36,6 @@ const Menu: NextPage = () => {
           {routes.map((route, index) => {
             return (
               <motion.button
-                initial="hidden"
                 onClick={() => {
                   router.push(route.route);
                 }}
@@ -54,15 +54,16 @@ const Menu: NextPage = () => {
                 <motion.div
                   initial="hidden"
                   animate="show"
+                  whileHover="hover"
                   variants={numbers}
                   custom={index}
-                  className="group font-subTitle relative text-6xl sm:text-2xl md:text-4xl lg:text-4xl xl:text-5xl ml-5 sm:ml-2 md:ml-2 lg:ml-2 xl:ml-2"
+                  className="group font-subTitle relative text-6xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl ml-5 sm:ml-2 md:ml-2 lg:ml-2 xl:ml-2"
                 >
                   {route.key}
                   <motion.div
                     key={index}
                     variants={underline}
-                    className="back-underline absolute bottom-0 w-full flex flex-auto left-0 h-2 bg-blue"
+                    className="absolute bottom-0 w-full flex flex-auto left-0 h-1 bg-blue"
                   ></motion.div>
                 </motion.div>
               </motion.button>

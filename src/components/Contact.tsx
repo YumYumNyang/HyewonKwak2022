@@ -3,40 +3,32 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../public/sm-yum.png";
 import { buttonAnimation } from "../utils/buttonAnimation";
-const toBase64 = (str: string) =>
-  typeof window === "undefined"
-    ? Buffer.from(str).toString("base64")
-    : window.btoa(str);
+import { comeUpAnimation } from "../utils/comeUpAnimation";
+ const contact = {
+   hidden: { opacity: 0, y: -20 },
+   show: {
+     opacity: 1,
+     y: 0,
+     transition: {
+       delay: 1.3,
+       staggerChildren: 0.2,
+       delayChildren: 1.5,
+     },
+   },
+ };
 
+ const image = {
+   show: {
+     opacity: 1,
+     scale: [0, 1.2, 0.9, 1],
+     transition: {
+       delay: 1.5,
+       times: [0, 0.5, 0.6, 0.8],
+     },
+   },
+   hidden: { opacity: 0, scale: 0 },
+ };
 const Contact = () => {
-  const contact = {
-    hidden: { opacity: 0, y: -20 },
-    show: {
-      opacity:1, y: 0,
-      transition: {
-        delay: 1.3,
-        staggerChildren: 0.2,
-        delayChildren: 1.5,
-      },
-    },
-  };
-  const item = {
-    hidden: {opacity: 0, y:-20},
-    show: {opacity:1, y: 0, transition: {duration: 0.8}}
-    
-  }
-  const image = {
-    show: {
-      opacity: 1,
-      scale: [0, 1.2, 0.9, 1],
-      transition: {
-        delay: 1.5,
-        times:  [0, 0.5, 0.6, 0.8],
-      },
-    },
-    hidden: { opacity: 0, scale: 0 },
-  };
-
   return (
     <motion.div
       initial="hidden"
@@ -59,7 +51,10 @@ const Contact = () => {
         ></Image>
       </motion.div>
       <motion.div
-        variants={item}
+        variants={comeUpAnimation}
+        whileHover={{
+          scale: 1.2,
+        }}
         className="font-subTitle text-center text-2xl md:text-base lg:text-base xl:text-base text-blue font-bold"
       >
         contact
@@ -67,7 +62,7 @@ const Contact = () => {
         me!
       </motion.div>
       <motion.div
-        variants={item}
+        variants={comeUpAnimation}
         className="font-desc flex space-x-1 md:text-2xs lg:text-2xs xl:text-xs "
       >
         <motion.a
@@ -99,7 +94,7 @@ const Contact = () => {
       </motion.div>
       <motion.button
         layout
-        variants={item}
+        variants={comeUpAnimation}
         whileTap={{ scale: 0.8 }}
         whileHover={{
           scale: 1.2,

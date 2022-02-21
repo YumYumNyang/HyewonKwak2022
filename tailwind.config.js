@@ -40,6 +40,7 @@ module.exports = {
       green: "#52C22B",
       red: "#FF5A52",
       yellow: "#E6C029",
+      babyblue: "#A4C3FF",
     },
     extend: {
       backgroundImage: {
@@ -48,18 +49,17 @@ module.exports = {
       },
       keyframes: {
         wave: {
-          "0%": { marginLeft: "0px"},
-          "100%": {marginLeft: "-1500px"}
+          "0%": { marginLeft: "0px" },
+          "100%": { marginLeft: "-1500px" },
         },
         swell: {
-          "0%": { marginLeft: "translate3d(0,-25px,0)"},
-          "100%": {marginLeft: "translate3d(0,-25px,0)"},
-          "50%": {transform : " translate3d(0,5px,0) "}
+          "0%": { marginLeft: "translate3d(0,-25px,0)" },
+          "100%": { marginLeft: "translate3d(0,-25px,0)" },
+          "50%": { transform: " translate3d(0,5px,0) " },
         },
         rotate: {
           "100%": { transform: "rotate(360deg)" },
         },
-      
       },
       animation: {
         rotate: "rotate 2s ease-in-out infinite",

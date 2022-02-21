@@ -41,9 +41,6 @@ const item = {
 };
 
 const Home: NextPage = () => {
-  const controls = useAnimation();
-
-
   return (
     <div className="container flex flex-col flex-auto min-w-full items-center justify-center text-center">
       <motion.div
