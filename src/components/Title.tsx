@@ -9,7 +9,7 @@ const str = {
   show: {
     opacity: 1,
     scale: [0, 1.1, 0.95, 1],
-    transition: {  times: [0, 0.6, 0.7, 0.8] },
+    transition: { times: [0, 0.6, 0.7, 0.8] },
   },
 };
 const Title = ({ title }: TitleProps) => {

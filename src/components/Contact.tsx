@@ -45,6 +45,7 @@ const Contact = () => {
         <Image
           id="logo"
           alt="logo"
+          priority={true}
           src={logo}
           objectFit="contain"
           layout="fill"
@@ -92,7 +93,7 @@ const Contact = () => {
           linkedIn
         </motion.a>
       </motion.div>
-      <motion.button
+      <motion.a
         layout
         variants={comeUpAnimation}
         whileTap={{ scale: 0.8 }}
@@ -102,10 +103,11 @@ const Contact = () => {
           borderColor: "blue",
           color: "blue",
         }}
+        href="https://heathered-bag-309.notion.site/1cd4578a52b346fa8955b28152c90c78"
         className="font-desc text-white bg-blue border-2 border-white dark:border-black px-2 md:text-2xs lg:text-xs box-border"
       >
         resume
-      </motion.button>
+      </motion.a>
     </motion.div>
   );
 };

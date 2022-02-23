@@ -1,25 +1,51 @@
-import React from "react";
+import { motion } from "framer-motion";
+import React, { ReactElement } from "react";
+import { comeUpAnimation } from "../utils/comeUpAnimation";
+import { descAnimation } from "../utils/descAnimation";
 
 interface Props {
   title: string;
-  desc: string;
+  desc: ReactElement;
   period: string;
 }
+
+const date =  {
+  hidden: { opacity: 0, y: -20 },
+  show: { opacity: 1, y: 0, transition: { delay: 1.2, duration: 0.8 } },
+};
+
 
 const ExperienceItem = ({ title, desc, period }: Props) => {
   return (
     <div className="container flex justify-between p-20 sm:flex-col   sm:p-3 md:p-3 lg:p-5 xl:p-5">
-      <div>
-        <div className="text-3xl font-subTitle  sm:text-base md:text-2xl lg:text-3xl ">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        variants={descAnimation}
+        viewport={{ once: true }}
+      >
+        <motion.div
+          variants={comeUpAnimation}
+          className="text-3xl font-subTitle  sm:text-base md:text-2xl lg:text-3xl "
+        >
           {title}
-        </div>
-        <div className="mt-2 font-etc py-2   sm:text-2xs md:text-xs lg:text-sm">
+        </motion.div>
+        <motion.div
+          variants={comeUpAnimation}
+          className="mt-2 font-etc py-2   sm:text-2xs md:text-xs lg:text-sm"
+        >
           {desc}
-        </div>
-      </div>
-      <div className="overflow-visible font-desc py-2  sm:text-left sm:text-xs md:text-xs lg:text-xs xl:text-sm text-right">
+        </motion.div>
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        variants={date}
+        viewport={{ once: true }}
+        className="overflow-visible font-desc py-2  sm:text-left sm:text-xs md:text-xs lg:text-xs xl:text-sm text-right"
+      >
         {period}
-      </div>
+      </motion.div>
     </div>
   );
 };

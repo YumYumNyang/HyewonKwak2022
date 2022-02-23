@@ -63,7 +63,7 @@ const Menu: NextPage = () => {
                   <motion.div
                     key={index}
                     variants={underline}
-                    className="absolute bottom-0 w-full flex flex-auto left-0 h-1 bg-blue"
+                    className="absolute bottom-0 w-full flex flex-auto left-0 h-3 bg-blue"
                   ></motion.div>
                 </motion.div>
               </motion.button>

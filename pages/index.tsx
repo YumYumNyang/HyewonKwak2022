@@ -24,7 +24,7 @@ const desc = {
 };
 
 const images = {
-  hidden: { opacity: 0, scale: 1.2 },
+  hidden: { opacity: 0, scale: 1.1 },
   show: {
     opacity: 1,
     scale: 1,
