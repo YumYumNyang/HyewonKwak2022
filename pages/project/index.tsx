@@ -12,21 +12,19 @@ import Line from "../../src/components/Line";
 
 const Project: NextPage = () => {
   return (
-    <motion.div
-      className="container min-w-full items-center min-h-screen overflow-scroll flex flex-col "
-    >
+    <motion.div className="container min-w-full items-center min-h-screen overflow-scroll flex flex-col ">
       <Title title={"See My Works!"} />
-      <Line/>
+      <Line />
       <RightProject
         src={gotgam}
         title={`GOT, GAM`}
-        subTitle={`TraveL record platfrom`}
+        subTitle={`Travel record platform`}
         description={`wanted hackathon best  participant 50 
 
 2021.10-11 making demo service
 2022.01- Refactoring, migration to Next.js`}
       />
-      <Line/>
+      <Line />
       <LeftProject
         src={lolmbti}
         title={`Lol-mbti
@@ -43,7 +41,7 @@ test`}
 
 2021.06-08 `}
       />
-      <Line/>
+      <Line />
       <LeftProject
         src={pixelskin}
         title={`pixel

@@ -30,7 +30,12 @@ DEVELOPMENT`,
     desc: (
       <div>
         {`Front-end intern at `}
-        <motion.a whileTap="tap" whileHover="hover" variants={buttonAnimation}>
+        <motion.a
+          href="https://ninehire.com/"
+          whileTap="tap"
+          whileHover="hover"
+          variants={buttonAnimation}
+        >
           Ninehire
         </motion.a>
         <br />
