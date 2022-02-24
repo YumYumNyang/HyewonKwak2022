@@ -19,7 +19,7 @@ const Project: NextPage = () => {
         src={gotgam}
         title={`GOT, GAM`}
         subTitle={`Travel record platform`}
-        description={`wanted hackathon best  participant 50 
+        description={`wanted hackathon best participant 50 
 
 2021.10-11 making demo service
 2022.01- Refactoring, migration to Next.js`}
@@ -37,7 +37,7 @@ test`}
         src={eggcation}
         title={`Egg cation`}
         subTitle={`metaverse for education`}
-        description={`pnu  creative convergence hackathon 2nd prize
+        description={`pnu creative convergence hackathon 2nd prize
 
 2021.06-08 `}
       />

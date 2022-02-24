@@ -77,9 +77,19 @@ holding sessions, organizing events
 SALON
 ILLUstrator`,
     desc: (
-      <div>{`working as a illustrator at BubbleCloud
-drawing instagram toon about grooming
-`}</div>
+      <div>
+        {`working as a illustrator at `}
+        <motion.a
+          href="https://www.instagram.com/zzoori_salon/"
+          whileTap="tap"
+          whileHover="hover"
+          variants={buttonAnimation}
+        >
+          BubbleCloud
+        </motion.a>
+        {`
+drawing instagram toon about grooming`}
+      </div>
     ),
     period: `2020.09-CURRENT`,
   },
