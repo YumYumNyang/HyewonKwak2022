@@ -55,7 +55,7 @@ const Home: NextPage = () => {
         initial="hidden"
         animate="show"
         variants={images}
-        className="relative h-80 w-80 bg-contain sm:w-64 sm:h-64"
+        className="relative h-80 w-80 bg-contain sm:w-56 sm:h-56 "
       >
         <Image
           priority={true}
@@ -67,19 +67,19 @@ const Home: NextPage = () => {
         />
         <RotateSpark
           variant={item}
-          className="absolute top-14 left-0 w-14 sm:w-10 flex"
+          className="absolute top-20 left-0 w-14 sm:w-8 sm:left-2 sm:top-16 flex"
         />
         <RotateSpark
           variant={item}
-          className="absolute top-0 left-5 w-20 sm:w-14 flex"
+          className="absolute top-2 left-5 w-20 sm:w-12 sm:left-6 sm:top-4 flex"
         />
         <RotateSpark
           variant={item}
-          className="absolute top-48 right-0 w-12 sm:w-10 sm:top-40 flex"
+          className="absolute top-52 right-0 w-12 sm:w-8 sm:top-40 sm:right-2 flex"
         />
         <motion.div
           variants={item}
-          className="absolute top-40 sm:top-32 right-0 sm:right-3 font-desc text-left whitespace-pre break-normal text-xs sm:text-2xs"
+          className="absolute top-40 sm:top-28 right-0 sm:right-0 font-desc text-left whitespace-pre break-normal text-xs sm:text-2xs"
         >{`based in
 busan, south korea`}</motion.div>
       </motion.div>

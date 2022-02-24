@@ -51,22 +51,15 @@ const Layout: NextPage<LayoutProps> = ({ children }) => {
   // }, []);
 
   return (
-    <>
-      {/* <motion.div
-        key={router.pathname}
-        initial="hidden"
-        animate="page"
-        variants={pageAnimation}
-        className="fixed top-0 z-50 w-full bg-black dark:bg-blue"
-      /> */}
-      <motion.div
+
+      <div
         className="container flex flex-col min-h-screen min-w-full dark:text-white dark:bg-black"
       >
         <Header />
         {children}
         <Footer />
-      </motion.div>
-    </>
+      </div>
+    
   );
 };
 
