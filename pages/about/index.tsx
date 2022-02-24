@@ -61,16 +61,16 @@ const About: NextPage = () => {
           />
           <AboutItem
             href="mailto:khw121699@gmail.com?subject:Let's Talk"
-            content={`khw121699@gamil.com`}
+            content={`khw121699@gmail.com`}
           />
           <AboutItem href="https://yumyumnyang.github.io/" content={`📓`} />
           <AboutItem
             href="https://yumyumnyang.github.io/"
-            content={`YumYumnyang.github.io (current)`}
+            content={`yumyumnyang.github.io (current)`}
           />
           <AboutItem
             href="https://yumyumcoding.tistory.com/"
-            content={`YumYumNyang.tistory.com`}
+            content={`yumyumcoding.tistory.com`}
           />
           <AboutItem
             href="https://www.instagram.com/theonlyone_hye1/"
