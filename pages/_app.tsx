@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <TransitionProvider>
       <ThemeProvider attribute="class">
         <Head>
-          <title>Hyewon Kwak frontend developer</title>
+          <title>HYEWON, THE CREATOR</title>
         </Head>
         {/* <Cursor ref={cursorRef} /> */}
         <Layout>

@@ -4,30 +4,8 @@ import React from "react";
 import logo from "../../public/sm-yum.png";
 import { buttonAnimation } from "../utils/buttonAnimation";
 import { comeUpAnimation } from "../utils/comeUpAnimation";
- const contact = {
-   hidden: { opacity: 0, y: -20 },
-   show: {
-     opacity: 1,
-     y: 0,
-     transition: {
-       delay: 1.3,
-       staggerChildren: 0.2,
-       delayChildren: 1.5,
-     },
-   },
- };
 
- const image = {
-   show: {
-     opacity: 1,
-     scale: [0, 1.2, 0.9, 1],
-     transition: {
-       delay: 1.5,
-       times: [0, 0.5, 0.6, 0.8],
-     },
-   },
-   hidden: { opacity: 0, scale: 0 },
- };
+
 const Contact = () => {
   return (
     <motion.div
@@ -113,3 +91,29 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+const contact = {
+  hidden: { opacity: 0, y: -20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 1.3,
+      staggerChildren: 0.2,
+      delayChildren: 1.5,
+    },
+  },
+};
+
+const image = {
+  show: {
+    opacity: 1,
+    scale: [0, 1.2, 0.9, 1],
+    transition: {
+      delay: 1.5,
+      times: [0, 0.5, 0.6, 0.8],
+    },
+  },
+  hidden: { opacity: 0, scale: 0 },
+};

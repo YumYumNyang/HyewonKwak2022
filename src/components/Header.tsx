@@ -34,13 +34,13 @@ const Header = () => {
           <motion.div
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="flex items-center dark:justify-start justify-end
-bg-black text-2xs dark:bg-white w-6 h-4 m-2 px-1 rounded-full "
+bg-black text-2xs dark:bg-white w-6 h-4 m-2 px-1 leading-3 rounded-full "
           >
             <motion.button layout>
               {theme === "dark" ? "🌞" : "🌝"}
             </motion.button>
           </motion.div>
-          
+
           <motion.button
             whileTap="tap"
             whileHover="hover"
@@ -55,7 +55,6 @@ bg-black text-2xs dark:bg-white w-6 h-4 m-2 px-1 rounded-full "
         </div>
       )}
     </div>
-    
   );
 };
 
