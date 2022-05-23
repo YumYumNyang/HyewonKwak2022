@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         />
         <RotateSpark
           variant={item}
-          className="absolute top-20 left-0 w-14 h-14 sm:w-8 sm:left-2 sm:top-16"
+          className="absolute top-20 left-0 w-14 h-14 sm:w-8 sm:left-2 sm:top-16 "
         />
         <RotateSpark
           variant={item}
@@ -53,7 +53,7 @@ seoul, south korea`}</motion.div>
         variants={title}
         className="font-title tracking-wider uppercase text-3xl sm:text-2xl text-blue"
       >
-        CREATOR,
+        frontend developer!
       </motion.div>
       <motion.div
         initial="hidden"
