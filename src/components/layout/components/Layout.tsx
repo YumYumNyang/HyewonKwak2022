@@ -49,7 +49,7 @@ const Layout: NextPage<LayoutProps> = ({ children }) => {
 	// }, []);
 
 	return (
-		<div className="container flex flex-col min-h-screen min-w-full dark:text-white dark:bg-black">
+		<div className="container flex flex-col min-w-full min-h-screen dark:text-white dark:bg-black">
 			{router.pathname === "/blog" ? (
 				<>{children}</>
 			) : (

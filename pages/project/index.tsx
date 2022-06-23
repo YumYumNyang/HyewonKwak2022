@@ -1,13 +1,13 @@
 import { NextPage } from "next";
-import LeftProject from "../../src/components/LeftProject";
-import RightProject from "../../src/components/RightProject";
-import Title from "../../src/components/Title";
+import LeftProject from "../../src/components/project/components/LeftProject";
+import RightProject from "../../src/components/project/components/RightProject";
+import Title from "../../src/components/layout/components/Title";
 import gotgam from "../../public/gotgam.png";
 import lolmbti from "../../public/lolmbti.png";
 import eggcation from "../../public/eggcation.png";
 import pixelskin from "../../public/pixelskin.png";
 import { motion } from "framer-motion";
-import Line from "../../src/components/Line";
+import Line from "../../src/components/experience/components/Line";
 
 
 const Project: NextPage = () => {

@@ -4,7 +4,7 @@ import { buttonAnimation } from "../../../utils/buttonAnimation";
 
 const Footer = () => {
 	return (
-		<div className="mx-3 px-3 flex items-center justify-between h-8 font-desc border-t-2 text-xs sm:text-tiny md:text-tiny lg:text-tiny  sm:flex-col sm:justify-center md:flex-col md:justify-center  border-black dark:border-white">
+		<div className="flex items-center justify-between h-8 px-3 mx-3 text-xs border-t-2 border-black font-desc sm:text-tiny md:text-tiny lg:text-tiny sm:flex-col sm:justify-center md:flex-col md:justify-center dark:border-white">
 			<div>© HYEWON KWAK 2022. ALL RIGHTS RESERVED.</div>
 			<div className="flex space-x-2">
 				<motion.a
